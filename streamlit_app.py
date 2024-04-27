@@ -10,12 +10,23 @@ import pickle
 import streamlit as st
 import requests 
 
-model_url = 'https://github.com/IshrakHamim/futurefit/blob/main/ModelSchema.sav'
-response = requests.get(model_url)
-with open('ModelSchema.sav', 'wb') as f:
-    f.write(response.content)
+def load_model():
+    model_url = 'https://github.com/IshrakHamim/futurefit/blob/main/ModelSchema.sav'
+    response = requests.get(model_url)
+    with open('ModelSchema.sav', 'wb') as f:
+        f.write(response.content)
+    loaded_model = pickle.load(open('ModelSchema.sav', 'rb'))
+    return loaded_model
 
-loaded_model = pickle.load(open('ModelSchema.sav', 'rb'))
+# Load the model
+loaded_model = load_model()
+
+# model_url = 'https://github.com/IshrakHamim/futurefit/blob/main/ModelSchema.sav'
+# response = requests.get(model_url)
+# with open('ModelSchema.sav', 'wb') as f:
+#     f.write(response.content)
+
+# loaded_model = pickle.load(open('ModelSchema.sav', 'rb'))
 
 
 def feeder(arr):
