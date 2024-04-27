@@ -11,11 +11,9 @@ import streamlit as st
 import requests 
 
 def load_model():
-    model_url = 'https://github.com/IshrakHamim/futurefit/blob/main/ModelSchema.sav'
+    model_url = 'https://raw.githubusercontent.com/yourusername/yourrepository/main/ModelSchema.sav'
     response = requests.get(model_url)
-    with open('ModelSchema.sav', 'wb') as f:
-        f.write(response.content)
-    loaded_model = pickle.load(open('ModelSchema.sav', 'rb'))
+    loaded_model = pickle.loads(response.content)
     return loaded_model
 
 # Load the model
