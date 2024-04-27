@@ -52,7 +52,12 @@ def future_fit(input_data):
         return "Poor"   
 
 def cgcon(cg):
-    return str(np.float64(cg)*2.5)
+    try:
+        cg_float = float(cg)  # Convert cg to float
+        result = np.float64(cg_float * 2.5)  # Perform the calculation
+        return str(result)  # Convert the result back to string if needed
+    except (ValueError, TypeError) as e:
+        return f"Error: {e}"
 
     
 def main():
