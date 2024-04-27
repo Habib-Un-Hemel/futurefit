@@ -52,7 +52,7 @@ def future_fit(input_data):
         return "Poor"   
 
 def cgcon(cg):
-    return str(float(cg)*2.5)
+    return str(np.float64(cg)*2.5)
 
     
 def main():
