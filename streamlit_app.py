@@ -56,25 +56,26 @@ def main():
     
     dsa = st.text_input('How many DSA Questions have you solved so far?')
     cgpa = st.text_input('What is your CGPA?')
-    ml = st.selectbox(label = 'Do you know ML? Select from the dropdown menue', options = ["Yes", "No"])
-    kdsa = st.selectbox(label = 'Do you know DSA? Select from the dropdown menue', options = ["Yes", "No"])
-    python = st.selectbox(label = 'Do you know Python? Select from the dropdown menue', options = ["Yes", "No"])
-    js = st.selectbox(label = 'Do you know JavaScript? Select from the dropdown menue', options = ["Yes", "No"])
-    html = st.selectbox(label = 'Do you know HTML? Select from the dropdown menue', options = ["Yes", "No"])
-    css = st.selectbox(label = 'Do you know CSS? Select from the dropdown menue', options = ["Yes", "No"])
-    club = st.selectbox(label = 'Were you active in any coding club? Select from the dropdown menue', options = ["Yes", "No"])
+    ml = st.selectbox(label = 'Do you know ML?', options = ["Yes", "No"])
+    kdsa = st.selectbox(label = 'Do you know DSA?', options = ["Yes", "No"])
+    python = st.selectbox(label = 'Do you know Python?', options = ["Yes", "No"])
+    js = st.selectbox(label = 'Do you know JavaScript?', options = ["Yes", "No"])
+    html = st.selectbox(label = 'Do you know HTML?', options = ["Yes", "No"])
+    css = st.selectbox(label = 'Do you know CSS?', options = ["Yes", "No"])
+    club = st.selectbox(label = 'Were you active in any coding club?', options = ["Yes", "No"])
     backlog = st.text_input('How many backlogs do you have?')
     age = st.text_input('What is your Age?')
-    major = st.selectbox(label = 'What is your branch of ? Select from the dropdown menue', options = ["Computer Science", "Electrical Engineering", "Mechanical Engineering", "Civil Engineering"])
+    major = st.selectbox(label = 'What is your branch of ? Select from the dropdown menu', options = ["Computer Science", "Electrical Engineering", "Mechanical Engineering", "Civil Engineering"])
     
     forecast = ''
     
     st.write('If your package is _lower than **10LPA**_ then it will be classified as **Poor**')
     st.write('If your package is _between **10LPA** to **20LPA**_ then it will be classified as **Decent**')
     st.write('If your package is _higher than **20LPA**_ then it will be classified as **Great**')
-    
+
+    cgpa = cgpa*2.5
     if st.button('Predict Placement Catagory'):
-        forecast = future_fit([dsa, cgpa*2.5, ml , kdsa , python, js , html, css, club , backlog, age, major])
+        forecast = future_fit([dsa, cgpa, ml , kdsa , python, js , html, css, club , backlog, age, major])
         
     st.success(forecast)
     
