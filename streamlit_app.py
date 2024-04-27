@@ -51,10 +51,9 @@ def future_fit(input_data):
     else:
         return "Poor"   
 
-# def cgcon(cg):
-#     cg = float(cg)
-#     cg = cg*2.5
-#     cg = str(cg)
+def cgcon(cg):
+    return str(float(cg)*2.5)
+
     
 def main():
     st.title('Job Salary Prediction Web App') 
@@ -78,7 +77,7 @@ def main():
     st.write('If your package is _between **10LPA** to **20LPA**_ then it will be classified as **Decent**')
     st.write('If your package is _higher than **20LPA**_ then it will be classified as **Great**')
 
-    # cgcon(cgpa)
+    cgpa = cgcon(cgpa)
     if st.button('Predict Placement Catagory'):
         forecast = future_fit([dsa, cgpa, ml , kdsa , python, js , html, css, club , backlog, age, major])
         
