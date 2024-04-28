@@ -67,7 +67,7 @@ def main():
     dsa = st.text_input('How many DSA Questions have you solved so far?')
     cgpa = st.text_input('What is your CGPA?')
     ml = st.selectbox(label = 'Do you know Machine Learning?', options = ["Yes", "No"])
-    kdsa = st.selectbox(label = 'Do you know Data Structures Algorithms?', options = ["Yes", "No"])
+    kdsa = st.selectbox(label = 'Do you know Data Structures and Algorithms?', options = ["Yes", "No"])
     python = st.selectbox(label = 'Do you know Python?', options = ["Yes", "No"])
     js = st.selectbox(label = 'Do you know JavaScript?', options = ["Yes", "No"])
     html = st.selectbox(label = 'Do you know HTML?', options = ["Yes", "No"])
