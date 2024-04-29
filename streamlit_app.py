@@ -24,7 +24,7 @@ def footer():
         position: fixed;
         bottom: 0;
         width: 100%;
-        background-color: #ffffff;
+        background-color: #000000;
         text-align: center;
         padding: 10px 0;
     }
