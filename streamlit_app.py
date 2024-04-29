@@ -17,7 +17,22 @@ loaded_model = pickle.load(open('ModelSchemaUpdated.sav', 'rb'))
 #     f.write(response.content)
 
 # loaded_model = pickle.load(open('ModelSchema.sav', 'rb'))
-
+def footer():
+    st.markdown("""
+    <style>
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 10px 0;
+    }
+    </style>
+    <div class="footer">
+      <p>Copyright &copy; Ishrak and Hemel. All rights reserved.</p>
+    </div>
+    """, unsafe_allow_html=True)
 
 def feeder(arr):
   for i in range(len(arr)):
@@ -88,6 +103,7 @@ def main():
         forecast = future_fit([dsa, cgpa, ml , kdsa , python, js , html, css, club , backlog, age, major])
         
     st.success(forecast)
+    footer()
     
 if __name__ == '__main__':
     main() 
