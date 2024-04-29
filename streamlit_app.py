@@ -10,7 +10,7 @@ import pickle
 import streamlit as st
 import requests 
 
-loaded_model = pickle.load(open('ModelSchema.sav', 'rb'))
+loaded_model = pickle.load(open('ModelSchemaUpdated.sav', 'rb'))
 # model_url = 'https://github.com/IshrakHamim/futurefit/blob/main/ModelSchema.sav'
 # response = requests.get(model_url)
 # with open('ModelSchema.sav', 'wb') as f:
