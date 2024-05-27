@@ -10,14 +10,29 @@ import pickle
 import streamlit as st
 import requests 
 
-loaded_model = pickle.load(open('ModelSchema.sav', 'rb'))
+loaded_model = pickle.load(open('ModelSchemaUpdated.sav', 'rb'))
 # model_url = 'https://github.com/IshrakHamim/futurefit/blob/main/ModelSchema.sav'
 # response = requests.get(model_url)
 # with open('ModelSchema.sav', 'wb') as f:
 #     f.write(response.content)
 
 # loaded_model = pickle.load(open('ModelSchema.sav', 'rb'))
-
+def footer():
+    st.markdown("""
+    <style>
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        # background-color: #141723;
+        text-align: center;
+        padding: 10px 0;
+    }
+    </style>
+    <div class="footer">
+      <p>Copyright &copy; Ishrak and Hemel. All rights reserved.</p>
+    </div>
+    """, unsafe_allow_html=True)
 
 def feeder(arr):
   for i in range(len(arr)):
@@ -88,6 +103,7 @@ def main():
         forecast = future_fit([dsa, cgpa, ml , kdsa , python, js , html, css, club , backlog, age, major])
         
     st.success(forecast)
+    footer()
     
 if __name__ == '__main__':
     main() 
