@@ -1,8 +1,8 @@
 # futurefit 
 is live on https://futurefit.streamlit.app/
-
+<br>
 The Dataset's link is https://www.kaggle.com/datasets/firozchowdury/placement-package-ctc-prediction-dataset
-We used a synthetic Dataset to train our model
-
+<br>We used a synthetic Dataset to train our model
+<br>
 The overleaf link: https://www.overleaf.com/read/bcxpdkysbgbw#86b8d1
 
