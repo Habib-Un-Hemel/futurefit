@@ -1,14 +1,15 @@
-# futurefit 
+
+### Made by:
+---
+#### -  Habibun Nabi Hemel  
+#### - Ishrak Hamim Mahi
 
 ### 1. **Overview:**
 **FutureFit** is a predictive modeling tool designed to help **BSc students** understand their placement prospects and expected salary packages by leveraging machine learning algorithms. The system analyzes historical placement data of students, including factors such as academic performance, skills, internships, and more, to predict whether a student will secure a **great**, **decent**, or **poor** job placement in terms of salary.
 
 The tool's goal is to motivate students to focus on enhancing the skills that will improve their chances of securing higher-paying jobs and to guide them in their preparation for campus placements.
 
-### Made by:
----
-#### Habibun Nabi Hemel  
-#### Ishrak Hamim Mahi
+
 
 
 ### 2. **Data & Preprocessing:**
