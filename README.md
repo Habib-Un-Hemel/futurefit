@@ -1,25 +1,18 @@
 # futurefit 
-is live on https://futurefit.streamlit.app/
-<br>
-<br>
 
-The Dataset's link is https://www.kaggle.com/datasets/firozchowdury/placement-package-ctc-prediction-dataset
-<br>We used a synthetic Dataset to train our model
-
-<br>
-<br>
-The overleaf link: https://www.overleaf.com/read/bcxpdkysbgbw#86b8d1
-
-Sure! Here's a more detailed explanation of the **FutureFit** system:
-
----
-
-### **Overview:**
-FutureFit is a predictive modeling tool designed to help **BSc students** understand their placement prospects and expected salary packages by leveraging machine learning algorithms. The system analyzes historical placement data of students, including factors such as academic performance, skills, internships, and more, to predict whether a student will secure a **great**, **decent**, or **poor** job placement in terms of salary.
+### 1. **Overview:**
+**FutureFit** is a predictive modeling tool designed to help **BSc students** understand their placement prospects and expected salary packages by leveraging machine learning algorithms. The system analyzes historical placement data of students, including factors such as academic performance, skills, internships, and more, to predict whether a student will secure a **great**, **decent**, or **poor** job placement in terms of salary.
 
 The tool's goal is to motivate students to focus on enhancing the skills that will improve their chances of securing higher-paying jobs and to guide them in their preparation for campus placements.
 
-### **Data & Preprocessing:**
+### Made by:
+---
+#### Habibun Nabi Hemel  
+#### Ishrak Hamim Mahi
+
+
+### 2. **Data & Preprocessing:**
+
 The dataset used for training and testing the machine learning models is **synthetic**, as no large-scale real-world dataset was available for this type of prediction. The synthetic dataset consists of **220,000 rows** and **19 features**, representing various attributes such as:
 
 - **Academic performance** (GPA, subjects studied)
@@ -27,8 +20,23 @@ The dataset used for training and testing the machine learning models is **synth
 - **Skills acquired** (programming languages, certifications)
 - **Previous placements and salary**
 - **Location and company size**
+  
+<br>
+<br>
+The Dataset's link is https://www.kaggle.com/datasets/firozchowdury/placement-package-ctc-prediction-dataset
+<br>
+  <br>
+  <br>
+<p align="center">
+  <img src="photo/data.png" width="500" title="data">
+  <br>
+  <br>
+  Figure 1: DataSet
+</p>
 
-#### **Steps Taken in Preprocessing:**
+
+
+#### 3. **Steps Taken in Preprocessing:**
 1. **Data Cleaning**:  
    Irrelevant or redundant details were removed from the dataset.
    
@@ -41,7 +49,7 @@ The dataset used for training and testing the machine learning models is **synth
 4. **Splitting Data**:  
    The data was split into **training** and **testing** sets (70% for training, 30% for testing) to ensure the models' effectiveness and avoid overfitting.
 
-### **Model Selection & Algorithms:**
+### 4. **Model Selection & Algorithms:**
 The system uses several **machine learning algorithms** to predict placement success and salary brackets. These include:
 
 1. **Decision Tree Classifier**:  
@@ -62,7 +70,7 @@ The system uses several **machine learning algorithms** to predict placement suc
 6. **K-Nearest Neighbors (KNN)**:  
    A non-parametric method that classifies a data point based on how its neighbors are classified.
 
-### **Prediction Classes (Salary Ranges):**
+### 5. **Prediction Classes (Salary Ranges):**
 The **placement outcome** is categorized into three salary brackets:
 
 - **Great (Above 20 LPA)**:  
@@ -74,14 +82,26 @@ The **placement outcome** is categorized into three salary brackets:
 - **Poor (Below 10 LPA)**:  
    Students whose placement predictions fall into this category are expected to secure jobs with salaries under **10 LPA**, often in smaller or less competitive companies.
 
-### **Model Performance:**
+### 6. **Model Performance:**
 After training and evaluating various models, it was found that **Random Forest** provided the most **accurate predictions**. This suggests that a combination of decision trees is more capable of understanding the complex relationships between the student’s characteristics and their placement prospects.
 
-### **Live Application:**
+### 7. **Live Application:**
 The **FutureFit** platform is live online, where students can input their data (such as academic performance, skills, etc.) and receive predictions about their potential placement salary. The platform provides the following:
 
 - **Real-time predictions**: By simply entering data, students can get immediate feedback about their placement prospects.
 - **Career Guidance**: Students can better understand their strengths and weaknesses and focus on improving specific skills for better placement opportunities.
+
+<br>
+is live on https://futurefit.streamlit.app/
+<br>
+
+### Webpage
+<p align="center">
+  <img src="photo/project2.png" width="500" title="ER/EER diagram">
+  <br>
+  <br>
+  Figure 2: FutureFit is live
+</p>
 
 ### **Conclusion:**
 **FutureFit** serves as a **predictive and motivational tool** for students, enabling them to make informed decisions regarding their preparation for campus placements. By forecasting potential job salaries, it helps students:
@@ -92,6 +112,17 @@ The **FutureFit** platform is live online, where students can input their data (
 
 This system not only encourages students to develop in-demand skills but also empowers them to optimize their preparation, ultimately leading to higher chances of securing better job offers.
 
----
+### **Paper** 
 
-Does this provide the depth you're looking for, or would you like to explore certain aspects further?
+The overleaf link: https://www.overleaf.com/read/bcxpdkysbgbw#86b8d1
+
+  <br>
+  <br>
+  
+<p align="center">
+  <img src="photo/paper.png" width="500" title="ER/EER diagram">
+  <br>
+  <br>
+  Figure 3: paper
+</p>
+
